@@ -165,9 +165,10 @@
     {言語}は余りにも複雑すぎてこのままでは科学の対象にならないから分類が必要
       by. `ソシュール`
       ラング, langue: 抽象的で特定社会の慣習として成員間に共通な言語
-      パロール, parole: 具体的で個人の言語活動に顕著な言語
-        これは対象外
-          慎重に区分けすべし
+        話し手から切り離された言語の論理的・体系的な部分
+        <-> パロール, parole: 具体的で個人の言語活動に顕著な言語
+          これは対象外
+            慎重に区分けすべし
 
   歴史言語学, historical linguistics:
     when 18C
@@ -299,7 +300,7 @@
     入れ替えると意味が変わるなら異なる{音素}と見なす
       {構造言語学}のやり方
     形態的・統語的に{音素}を定める
-      生成文法のやり方であり演繹的手法
+      {生成文法}のやり方であり演繹的手法
         仮定が先で音声データに当てはめる
         合わなければ仮定を修正
     生成音素論での{音素}を特性:
@@ -446,11 +447,7 @@
 
   品詞: {語}の種類
     ギリシア語、ラテン語で確率された文法範疇
-    名詞
-    動詞
-    形容詞
-    副詞
-
+    名詞、動詞、形容詞、副詞など
 
   人称, person: 話し手と利き手という言語行動の基本的要素
     １人称: 話し手
@@ -467,39 +464,37 @@
     時制, tense: 文中の行為、状態が起こった時間
       現在・過去・未来
       過去・非過去(・無時間)
-        e.g. 日本語
-        e.g. ゲルマン語派(Germanic)
-        e.g. スラヴ語派(Slavic)
+        e.g. 日本語, ゲルマン語派(Germanic), スラヴ語派(Slavic)
       一般的真理・事実の報告・不確実な事柄
         e.g. ホピ語
     相, aspect: 事柄の起こる時間の分布あるいは輪郭
       ロシア語では{相}が義務であり、動詞は必ず完了か未完了のいずれか
       英語では完了や継続を区別
-      完了{相}, completion
-      継続{相}, dulation
-      瞬時{相}, mementary
-      反復{相}, iterative
-      習慣{相}, hbitual
-      起動{相}, inchoative
-      終止{相}, terminate
-      結果{相}, effictive
+      完了, completion
+      継続, dulation
+      瞬時, mementary
+      反復, iterative
+      習慣, hbitual
+      起動, inchoative
+      終止, terminate
+      結果, effictive
 
     法, mood: 事柄の現実性・偶然性の程度や種別を示す文法範疇
-      直接{法}, indicative
-      接続{法}, subjunctive
-      命令{法}, imperative
-      願望{法}, optative
-      仮定{法}
+      直接, indicative
+      接続, subjunctive
+      命令, imperative
+      願望, optative
+      仮定
 
     {時制}・{相}・{法}は言語によって融合しがち
 
     <-> 態, voice: 主語と述語動詞に関わる{統語論}レベルの言語形式
-      能動{法}, active: 主語が動作者(主体)
-      受動{法}, passive: 主語が被動作者(客体)
-      中間{法}, middle: 動作が動作者の利益のためや動作者自身のために行われる
+      能動, active: 主語が動作者(主体)
+      受動, passive: 主語が被動作者(客体)
+      中間, middle: 動作が動作者の利益のためや動作者自身のために行われる
         e.g. ギリシア語の「私は私自身を行かせる」
-      使役{法}, causative
-      相互{法}, reciprocal
+      使役, causative
+      相互, reciprocal
       日本語では{受動}・非{受動}
         間接受動: 主語が不利益・迷惑を受ける場合
           e.g. 「子供に死なれた」
@@ -531,11 +526,6 @@
   主要部, head:
   限定部, attribute:
 
-  構造
-    内心
-      等位
-      従位
-
   構造型, construction type: 統語関係によって規定される構造体の類型
     外心構造
       主述型, predication: 主部-述部
@@ -543,15 +533,103 @@
       従位型, subordination: 従位連結子と独立要素から成る
     内心構造
     修飾型, modification: {主要部}と{限定部}が修飾-被修飾の関係
-    等位型, co-ordination: 独立要素同士の統語的に対等な関係
+    等位型, coordination: 独立要素同士の統語的に対等な関係
 
   構成要素類, constituent class: 同一{構造型}の中で互いに入れ替え可能なもの
   拡張, expansion: 基本的な構造のモデルを組み合わせてより大きな{構造体}を作ること
 ## 5. 文の生成
 
 
+  生成文法, generative grammer, 変形文法, tansformational grammer:
+    言語学のコペルニクス的転換に相当
+    現代論理学と数学の公式のような明示的な文法規則を仮定
+      言語資料を超えた内容まで言及
+      <-> `構造主義`
+    話し手の言語能力自体を対象とする新しい視点
+    言語の多様性ではなく、共通性・普遍性に目を向けた
+    {統語論}が中心
+      <-> {構造主義}では{音素論}、{形態論}、{統語論}、...とレベルを分けていた
+        {構造主義}では低レベルの問題を解決してから次のレベルへ進める
+          {音素論}の研究に偏っていた
+    {IC分析}では解決できなかった問題を説明
+      変形操作の帰結が同一の表面構造になっただけ
+      同義性
+      同音異義性
+      曖昧性
+
+  IC分析, 直接構成要素分析, immediate constituent analysis:
+    句構造との類似？
 
 
+  SS, Syntactic Structure: {生成文法}に関する伝説的な小冊子
+    when. 1957
+    by. ノーム・チョムスキー: 若干30歳でを作成
+      when. 1928 ~
+  初期生成理論: {SS}
+    1. 句構造規則, P-rules, phrase structure rules:
+      文の直接構成要素の結合様式に関する規則
+      脈絡感応規則, context-sensitive rules:
+        定式 A -> B/X__Y
+          XとYに挟まれた場合だけ、AはBになる
+        <-> 脈絡自由規則, context-free rules:
+      語彙規則:
+        開かれた組, open set:
+
+    2. 変形規則, T-rules, transformational rules: 構造上の変化を与える規則
+      左辺に２つ以上の記号を置ける
+      子要素全てに適用される
+      位置転換, permutation:
+        A + B => B + A
+      付加, addition: 既存要素に新たな要素を加える
+        A => A + B
+      削除, deletion: 既存要素を消す
+        A + B => A
+      集約, reduction: ２つ以上の要素を１つにまとめる
+        A + B => C
+      複合変形, generalized transformation: ２つ以上の文を１つの文に合体
+
+    3. 形態音素規則, MP-rules, morphophonemic rules:
+      生成された配列に音声を付与する規則
+      話し言葉に対するものであって、書き言葉に対して形態綴字規則を設定すれば良い
+
+  生成文法の記号:
+    類別記号, class symbol: {句構造規則}と{変形規則}で使われる
+      NP 名詞句, noun phrase
+      VP 動詞句, verb phrase
+        VとNPに{展開}できる
+      V 動詞, verb
+      Vt, 他動詞
+      Tns 時制
+      <-> 包括記号, cover symbol: {類別記号}ではない
+
+
+  書き換え規則, rewriting rules:
+
+  始発{記号}, initial symbol: {展開}の出発点となる{記号}
+  最終{記号}列, terminal string:
+
+  句標識, P-marker, phrase marker:
+
+
+  言語能力と言語運用の区別
+
+  Aspects理論: 意味を扱う文法を{SS}に加えて再構成
+    by. `チョムスキー`
+    when. 1965
+    聞き手の立場も考慮されている
+    統語部門, syntactic component:
+      基底部門, base component: {句構造規則}に相当
+        深層構造を作り出す
+      変形部門, transformational component: {変形規則}に相当
+        深層構造から表層構造を作り出す
+      語彙目録, lexicon:
+    音声部門, phonological component:
+    意味部門, semantic component:
+
+  深層構造: その文に意味を与える
+  替え玉{記号}, dummy symbol: {開始記号}に対して{基底部門}で既に与えられる目印
+    e.g. 疑問、否定、受動、強調
+    {変形部門}での義務的変形の手がかり
 ## 6. 意味論
 
 
