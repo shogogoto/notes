@@ -525,7 +525,7 @@
     限定部, attribute:
     {IC}分析: 最小の{IC}に達するまで{構造体}を分割して統語関係を明らかにする
       最終構成要素, ultimate constituent:  単一の{形態素}から成る{構成要素}
-      問題
+      {IC分析}の問題:
         不連続構成要素, discontinuous constituent: {線状性}を持たない{IC}
           e.g. 疑問文の「did, go there」みたいに離れている
         多項構成要素, multiple constituent: 複数語の{IC}
@@ -551,78 +551,92 @@
     拡張, expansion: 基本的な構造のモデルを組み合わせてより大きな{構造体}を作ること
 
 ## 5. 文の生成
+  IC分析, 直接構成要素分析, immediate constituent analysis:
+    句構造との類似？
   生成文法, generative grammer, 変形文法, tansformational grammer:
     言語学のコペルニクス的転換に相当
     現代論理学と数学の公式のような明示的な文法規則を仮定
       言語資料を超えた内容まで言及
       <-> `構造主義`
-    話し手の言語能力自体を対象とする新しい視点
+    話し手の言語能力(competence)自体を数学的に記述
     言語の多様性ではなく、共通性・普遍性に目を向けた
     {統語論}が中心
       <-> {構造主義}では{音素論}、{形態論}、{統語論}、...とレベルを分けていた
         {構造主義}では低レベルの問題を解決してから次のレベルへ進める
           {音素論}の研究に偏っていた
-    {IC分析}では解決できなかった問題を説明
+    {IC分析の問題}を解決
       変形操作の帰結が同一の表面構造になっただけ
-      同義性
-      同音異義性
-      曖昧性
 
-  IC分析, 直接構成要素分析, immediate constituent analysis:
-    句構造との類似？
-
-
-  SS, Syntactic Structure: {生成文法}に関する伝説的な小冊子
-    when. 1957
-    by. ノーム・チョムスキー: 若干30歳でを作成
-      when. 1928 ~
-  初期生成理論: {SS}
-    1. 句構造規則, P-rules, phrase structure rules:
-      文の直接構成要素の結合様式に関する規則
-      脈絡感応規則, context-sensitive rules:
-        定式 A -> B/X__Y
-          XとYに挟まれた場合だけ、AはBになる
-        <-> 脈絡自由規則, context-free rules:
-      語彙規則:
-        開かれた組, open set:
-
-    2. 変形規則, T-rules, transformational rules: 構造上の変化を与える規則
-      左辺に２つ以上の記号を置ける
-      子要素全てに適用される
-      位置転換, permutation:
-        A + B => B + A
-      付加, addition: 既存要素に新たな要素を加える
-        A => A + B
-      削除, deletion: 既存要素を消す
-        A + B => A
-      集約, reduction: ２つ以上の要素を１つにまとめる
-        A + B => C
-      複合変形, generalized transformation: ２つ以上の文を１つの文に合体
-
-    3. 形態音素規則, MP-rules, morphophonemic rules:
-      生成された配列に音声を付与する規則
-      話し言葉に対するものであって、書き言葉に対して形態綴字規則を設定すれば良い
-
+    SS, Syntactic Structure: {生成文法}に関する伝説的な小冊子
+      when. 1957
+      by. ノーム・チョムスキー: 若干30歳でを作成
+        when. 1928 ~
+    初期生成理論: {SS}
+      1. 句構造規則, P-rules, phrase structure rules,書き換え規則, rewriting rules:
+        文の{IC}の結合様式に関する規則
+        左辺の{構造体}を右辺のより小さい{IC}へ書き換える規則
+          展開, expansion: A -> B + C
+            置き換え, replacemen: Cがない{展開}の特殊例
+        脈絡感応規則, context-sensitive rules: 特定の前後関係や文脈で適用される
+          定式 A -> B/X__Y
+            XとYに挟まれた場合だけ、AはBになる
+          脈絡自由規則, context-free rules: XとYがない{脈絡感応規則}の特殊例
+        語彙規則, L-rules, lexical rules: 抽象的な範疇記号に特定の語や形態素を挿入
+      2. 変形規則, T-rules, transformational rules: 構造上の変化を与える規則
+        左辺に２つ以上の記号を置ける
+        子要素全てに適用される
+        位置転換, permutation: {IC}の位置を変える
+          e.g. 受動変形、主語と目的語の位置変換
+          A + B => B + A
+        付加, addition: 既存要素に新たな要素を加える
+          e.g. 過去分詞形態素、前置詞の付加、否定変換
+          A => A + B
+        削除, deletion: 既存要素を消す
+          e.g. 命令変換
+          A + B => A
+        集約, reduction: ２つ以上の要素を１つにまとめる
+          e.g. be + ing => being
+          A + B => C
+        複合変形, generalized transformation: ２つ以上の文を１つの文に合体
+      3. 形態音素規則, MP-rules, morphophonemic rules:
+        生成された配列に音声を付与する規則
+        話し言葉に対するものであって、書き言葉に対して形態綴字規則を設定すれば良い
   生成文法の記号:
     類別記号, class symbol: {句構造規則}と{変形規則}で使われる
       NP 名詞句, noun phrase
+      N 名詞, noun
       VP 動詞句, verb phrase
         VとNPに{展開}できる
       V 動詞, verb
+      Det 限定詞
       Vt, 他動詞
       Tns 時制
+      Aux 助動詞部
       <-> 包括記号, cover symbol: {類別記号}ではない
 
+    演算記号, operator
+      要素の連結 +
+      二重交差記号: 文や語の両端を明示 #
+      書き換え ->
+      変形操作 =>
+      随意的選択 書き換えにおいて省略可能
+        e.g. A -> B(C)
+      １つだけ選択
+        e.g. A -> B, C, D, ...
+      共起関係 角カッコ
+        e.g. A[B C] -> A[D E]はAB -> AD と AC -> AEをまとめたもの
+      脈絡 /
+      統合 =
 
-  書き換え規則, rewriting rules:
-
+    再帰規則, recursive rules:
   始発{記号}, initial symbol: {展開}の出発点となる{記号}
-  最終{記号}列, terminal string:
+  最終{記号}列, terminal string: {最終構成要素}と同じ
+  句標識, P-marker, phrase marker: {始発記号}を根とした{IC分析}による木構造
+    e.g. 枝分かれ図(tree diagram)
+    e.g. かっこ図(labelled bracketing)
 
-  句標識, P-marker, phrase marker:
-
-
-  言語能力と言語運用の区別
+  開かれた組, open set: {展開}できる項をいくらでも追加できる語類や文法範疇
+    <-> 閉ざされた組, close set: {屈折}がない機能語など
 
   Aspects理論: 意味を扱う文法を{SS}に加えて再構成
     by. `チョムスキー`
@@ -637,7 +651,8 @@
     音声部門, phonological component:
     意味部門, semantic component:
 
-  深層構造: その文に意味を与える
+  深層構造, deep structure: その文に意味を与える
+    <-> 表層構造, surface structure:
   替え玉{記号}, dummy symbol: {開始記号}に対して{基底部門}で既に与えられる目印
     e.g. 疑問、否定、受動、強調
     {変形部門}での義務的変形の手がかり
